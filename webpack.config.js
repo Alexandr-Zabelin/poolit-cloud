@@ -30,6 +30,7 @@ module.exports = {
     ],
   },
   devServer: {
+    historyApiFallback: true,
     static: {
       directory: path.resolve(__dirname, './dist'),
     },

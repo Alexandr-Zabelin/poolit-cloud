@@ -1,7 +1,7 @@
 import React, { FC, useCallback, useState } from 'react';
 
 import { AuthSectionProps } from './types';
-import { Form } from './Form';
+import { AuthType, Form } from './Form';
 import { AuthSectionContainer, Tab, Tabs } from './styled';
 
 const TABS_TITLES = {
@@ -12,15 +12,13 @@ const TABS_TITLES = {
 export const AuthSection: FC<AuthSectionProps> = ({ initAuthType, onSubmitClick, className }) => {
   const [authType, setAuthType] = useState(initAuthType);
 
-  const onTabClick = useCallback(() => setAuthType(prev => (prev === 'login' ? 'registration' : 'login')), [setAuthType]);
-
   return (
     <AuthSectionContainer className={className}>
       <Tabs>
-        <Tab isActive={authType === 'login'} onClick={onTabClick} key="login">
+        <Tab isActive={authType === 'login'} onClick={() => setAuthType('login')} key="login">
           {TABS_TITLES.login}
         </Tab>
-        <Tab isActive={authType === 'registration'} onClick={onTabClick} key="reg">
+        <Tab isActive={authType === 'registration'} onClick={() => setAuthType('registration')} key="reg">
           {TABS_TITLES.registration}
         </Tab>
       </Tabs>

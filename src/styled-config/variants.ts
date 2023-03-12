@@ -7,6 +7,14 @@ export const variants = {
     ...baseVariant,
     fontSize: 64,
   },
+  h2Regular: {
+    ...baseVariant,
+    fontSize: 36,
+  },
+  h3Regular: {
+    ...baseVariant,
+    fontSize: 28,
+  },
   buttonRegular: {
     ...baseVariant,
     fontSize: 20,
