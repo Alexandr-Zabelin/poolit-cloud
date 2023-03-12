@@ -9,4 +9,5 @@ export const colors = {
   textPrimaryInverse: white,
   textPrimaryBlank: mainBlue,
   borderPrimary: black,
+  borderSecondary: mainBlue,
 };

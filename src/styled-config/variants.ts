@@ -7,8 +7,20 @@ export const variants = {
     ...baseVariant,
     fontSize: 64,
   },
+  buttonRegular: {
+    ...baseVariant,
+    fontSize: 20,
+  },
+  buttonH1Regular: {
+    ...baseVariant,
+    fontSize: 28,
+  },
   buttonTitleRegular: {
     ...baseVariant,
-    fotSize: 20,
+    fontSize: 24,
+  },
+  inputRegular: {
+    ...baseVariant,
+    fontSize: 20,
   },
 };
