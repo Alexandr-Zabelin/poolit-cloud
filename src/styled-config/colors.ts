@@ -5,6 +5,7 @@ const black = '#000';
 export const colors = {
   bgPrimary: mainBlue,
   bgBlank: white,
+  bgBlankInverse: black,
   textPrimary: black,
   textPrimaryInverse: white,
   textPrimaryBlank: mainBlue,

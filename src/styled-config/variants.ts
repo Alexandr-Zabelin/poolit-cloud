@@ -15,6 +15,10 @@ export const variants = {
     ...baseVariant,
     fontSize: 28,
   },
+  h4Regular: {
+    ...baseVariant,
+    fontSize: 20,
+  },
   buttonRegular: {
     ...baseVariant,
     fontSize: 20,
