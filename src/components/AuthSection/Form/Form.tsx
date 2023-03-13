@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FC, FormEvent, useCallback, useReducer, useState } from 'react';
 
-import { InputSection } from './InputSection';
+import { InputSection } from '../../InputSection';
 import { FormActions, formReducer } from './reducer';
 import { FormContainer, SubmitButton } from './styled';
 import { FormProps } from './types';

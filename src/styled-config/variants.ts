@@ -19,6 +19,10 @@ export const variants = {
     ...baseVariant,
     fontSize: 20,
   },
+  paragraphRegular: {
+    ...baseVariant,
+    fontSize: 24,
+  },
   buttonRegular: {
     ...baseVariant,
     fontSize: 20,

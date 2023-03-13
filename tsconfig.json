@@ -18,7 +18,9 @@
       "@components/*": ["./src/components/*"],
       "@components": ["./src/components"],
       "@scenes/*": ["./src/scenes/*"],
-      "@scenes": ["./src/scenes"]
+      "@scenes": ["./src/scenes"],
+      "@utils/*": ["./src/utils/*"],
+      "@utils": ["./src/utils"]
     }
   },
   "include": ["./src/*", "./src/**/*"]

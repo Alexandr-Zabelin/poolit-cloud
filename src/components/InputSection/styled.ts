@@ -11,20 +11,19 @@ export const InputSectionContainer = styled('div')(
   }),
 );
 
-export const Label = styled('label')(
+export const Label = styled('label')<{ isDark?: boolean }>(({ isDark }) =>
   css({
     ...variants.buttonTitleRegular,
     display: 'inline-block',
     cursor: 'pointer',
-    color: colors.textPrimaryInverse,
+    color: isDark ? colors.textPrimary : colors.textPrimaryInverse,
     mb: 12,
   }),
 );
 
-export const Input = styled('input')(
+export const Input = styled('input')<{ isDark?: boolean }>(({ isDark }) =>
   css({
     ...variants.inputRegular,
-    border: 'none',
     outline: 'none',
     px: '4px',
     py: '8px',
@@ -32,5 +31,7 @@ export const Input = styled('input')(
     width: '100%',
     boxSizing: 'border-box',
     borderRadius: 4,
+    border: isDark ? '1px solid' : 'none',
+    borderColor: colors.borderPrimary,
   }),
 );

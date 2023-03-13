@@ -6,13 +6,17 @@ export const PageLayoutContainer = styled('div')({
   display: 'flex',
 });
 
-export const MainContent = styled('div')({});
+export const MainContent = styled('div')(
+  css({
+    px: 40,
+    width: '100%',
+  }),
+);
 
 export const Title = styled('h3')(
   css({
     ...variants.h3Regular,
     mt: 20,
     mb: 40,
-    ml: 40,
   }),
 );

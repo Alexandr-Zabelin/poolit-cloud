@@ -6,6 +6,7 @@ const alias = {
   '@src': getPath('src'),
   '@components': getPath('src/components'),
   '@scenes': getPath('src/scenes'),
+  '@utils': getPath('src/utils'),
 };
 
 module.exports = {
@@ -31,6 +32,11 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST',
+      'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization, token',
+    },
     static: {
       directory: path.resolve(__dirname, './dist'),
     },
